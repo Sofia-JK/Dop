@@ -1,0 +1,356 @@
+.profile_style{
+    margin: 100px 150px 100px 150px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: max-content;
+    grid-gap: 20px;
+    min-height: 100vh;
+}
+
+.profile_student{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    height: fit-content;
+}
+
+.profile_admin{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_profile{
+    width: -webkit-fill-available;
+    padding: 40px 28px;
+    background-color: #F6F6F4;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.card_profile_admin{
+    padding: 40px 28px;
+    background-color: #F6F6F4;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.card_img{
+    display: flex;
+    border-radius: 50%;
+    width: 245px;
+    height: 245px;
+    background: #FFCD7F;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card_img>img{
+    border-radius: 50%;
+    width: inherit;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+
+.card_profile_admin>.card_img>img{
+    border-radius: 50%;
+    width: -webkit-fill-available;
+    height: inherit;
+    object-fit: cover;
+}
+
+.card_profile>div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card_profile>div>h1, .card_profile>div>p, .card_profile_admin>div>h1{
+    font-family: PTserif;
+    color: black;
+    font-size: 24px;
+    margin: 0px;
+} 
+
+.card_profile>div>h1, .card_profile_admin>div>h1{
+    font-weight: bold;
+}
+
+.card_profile>div>p{
+    font-weight: normal;
+    word-break: break-all;
+}
+
+.btn_admin{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.number_course{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 7;
+    grid-column-end: -1;
+}
+
+.admin_requet{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 5;
+    grid-column-end: -1;
+}
+
+.admin_requet2{
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-start: 5;
+    grid-column-end: -1;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.number_course>h1, .admin_requet>h1{
+    margin: 0px 0px 35px 0px;
+    font-family: PTserif;
+    color: black;
+    font-size: 40px;
+}
+
+.btn-add{
+    margin-top: 45px;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.add-admin{
+    padding: 23px 10px;
+    background: #9B94F2;
+    border-radius: 25px;
+    border: none;
+    font-family: PTserif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+}
+
+.add-homework{
+    width: fit-content;
+    padding: 23px 50px;
+    background: #9B94F2;
+    border-radius: 25px;
+    border: none;
+    font-family: PTserif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+}
+
+.btn-add>button:hover{
+    background: #FFCD7F;
+}
+
+.attach-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.attach-btn>button{
+    width: fit-content;
+    padding: 10px 35px;
+    background-color: rgb(225, 225, 225, 0.3);
+    border-radius: 25px;
+    border: 1.5px solid black;
+    font-family: PTserif;
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+}
+
+.attach-btn>button:hover{
+    background: #F6F6F4;
+}
+
+
+.attach-btn>button:focus{
+    background: #D9D9D9;
+}
+
+
+@media (max-width: 1500px){
+
+    .card_profile{
+        gap: 20px;
+    }
+
+    .card_img, .card_profile_admin>div>img{
+        width: 180px;
+        height: 180px;
+    }
+
+    .number_course>h1, .admin_requet>h1{
+        font-size: 36px;
+    }
+
+    .card_profile>div>h1, .card_profile>div>p, .card_profile_admin>div>h1, .add-admin, .add-homework, .attach-btn>button{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1150px){
+
+    .profile_style{
+        margin: 100px 100px 0px 100px;
+    }
+
+    .card_img, .card_profile_admin>div>img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .number_course>h1, .admin_requet>h1{
+        font-size: 34px;
+    }
+
+    .card_profile>div>h1, .card_profile>div>p, .card_profile_admin>div>h1, .add-admin, .add-homework, .attach-btn>button{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 950px){
+
+    .profile_style{
+        margin: 100px 50px 0px 50px;
+    }
+}
+
+
+@media (max-width: 830px){
+
+    .profile_style{
+        margin: 50px 25px 0px 25px;
+    }
+
+    .card_img, .card_profile_admin>div>img{
+        width: 115px;
+        height: 115px;
+    }
+
+    .number_course>h1, .admin_requet>h1{
+        font-size: 32px;
+    }
+
+    .card_profile>div>h1, .card_profile>div>p, .card_profile_admin>div>h1, .add-admin, .add-homework, .attach-btn>button{
+        font-size: 16px;
+    }
+
+    .profile_style{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .profile_student, .profile_admin{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .card_profile_admin{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .card_profile{
+        margin-bottom: 45px;
+    }
+
+    .btn-add{
+        grid-column-start: 4;
+        grid-column-end: -1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px;
+        gap: 20px;
+    }
+
+    .number_course, .admin_requet{
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    .profile_admin{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+
+    .add-homework{
+        padding: 13px 25px;
+    }
+
+    .attach-btn{
+        gap: 15px;
+    }
+
+    .attach-btn>button{
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 450px){
+
+    .btn-add{
+        justify-content: space-between;
+    }
+
+    .add-admin, .add-homework{
+        padding: 8px 20px;
+    }
+
+    .profile_style{
+        margin: 32px 25px 0px 25px;
+    }
+
+    .card_profile{
+        padding: 27px 12px;
+    }
+
+    .card_img, .card_profile_admin>div>img{
+        width: 102px;
+        height: 102px;
+    }
+
+    .number_course>h1, .admin_requet>h1{
+        font-size: 16px;
+    }
+
+    .card_profile>div>h1, .card_profile>div>p, .card_profile_admin>div>h1,.add-admin, .add-homework, .attach-btn>button{
+        font-size: 13px;
+    }
+}
+
+
+

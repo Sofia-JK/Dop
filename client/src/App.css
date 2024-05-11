@@ -1,0 +1,34 @@
+#root, body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.body{
+  height: 100%;
+}
+
+.font-index{
+  background-size: cover;
+  height: 1080px;
+}
+
+
+@font-face {
+  font-family: PTserif;
+  font-weight: normal;
+  src: url('./assets/text/ptserif.ttf');
+}
+
+@font-face {
+  font-family: PTserif;
+  font-weight: bold;
+  src: url('./assets/text/ptserifbold.ttf');
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,118 @@
+.mini-card_lectorer{
+    border: none;
+    border-radius: 20px;
+    background-color: #F6F6F4;
+    box-shadow: 0px 7px 12px 0px rgba(25, 58, 103, 0.12);
+    padding: 59px;
+    width: min-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mini-card_lectorer>div{
+    width: 245px;
+    height: 245px;
+    border-radius: 50%;
+    background: #F5DC88;
+}
+
+.mini-card_lectorer>div>img{
+    border-radius: 50%;
+    width: -webkit-fill-available;
+    height: inherit;
+    object-fit: cover;
+}
+
+.mini-card_lectorer>h1{
+    text-align: center;
+    font-family: PTserif;
+    font-weight: bold;
+    margin: 0px;
+    color: black;
+    font-size: 24px;
+    min-width: 270px;
+}
+
+@media (max-width: 1500px){
+
+    .mini-card_lectorer{
+        padding: 35px;
+    }
+
+    .mini-card_lectorer>div{
+        width: 180px;
+        height: 180px;
+    }
+
+    .mini-card_lectorer>h1{
+        font-size: 20px;
+    }
+
+    .mini-card_lectorer>h1{
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 1150px){
+
+    .mini-card_lectorer{
+        padding: 30px;
+    }
+
+    .mini-card_lectorer>div{
+        width: 130px;
+        height: 130px;
+    }
+
+    .mini-card_lectorer>h1{
+        font-size: 18px;
+    }
+
+    .mini-card_lectorer>h1{
+        min-width: 180px;
+    }
+}
+@media (max-width: 830px){
+
+    .mini-card_lectorer>div{
+        width: 115px;
+        height: 115px;
+    }
+
+    .mini-card_lectorer>h1{
+        font-size: 16px;
+    }
+
+    .mini-card_lectorer>h1{
+        min-width: 150px;
+    }
+}
+@media (max-width: 450px){
+
+    .mini-card_lectorer{
+        padding: 30px 20px;
+        justify-content: space-between;
+    }
+
+    .mini-card_lectorer>div{
+        width: 102px;
+        height: 102px;
+    }
+
+    .mini-card_lectorer>h1{
+        font-size: 13px;
+    }
+
+    .mini-card_lectorer>h1{
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 350px){
+    .mini-card_lectorer>h1{
+        min-width: 150px;
+    }
+}
